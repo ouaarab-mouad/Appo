@@ -1,0 +1,9 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(17, 2, 31);
+}
