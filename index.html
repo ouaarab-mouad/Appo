@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Background Color</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1> <br>
-    <p>Lorem  dolor sit amet consectetur adipisicing elit. Quaerat distinctio 
-        tenetur aliquam porro cum, cumque recusandae illo consequatur nihil deserunt, 
-        vero deleniti maxime tempore, eveniet quasi aut adipisci molestiae eligendi?</p>
+    <div class="container">
+        <button id="changeColorBtn">Change Background Color</button>
+    </div>
+
+    <script>
+        document.getElementById("changeColorBtn").addEventListener("click", function () {
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>
